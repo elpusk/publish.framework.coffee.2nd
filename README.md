@@ -13,11 +13,11 @@ coffee framework second edition
   + sudo dpkg -i coffee-manager-2nd_2.0_amd64.deb
 
 - Removal Method
-  + sudo dpkg -P coffee-manager-2nd_2.0_amd64.deb or
-  + sudo dpkg -r coffee-manager-2nd_2.0_amd64.deb
+  + sudo dpkg -P coffee-manager-2nd or
+  + sudo dpkg -r coffee-manager-2nd
 
 - Manual Removal : In case of installation or removal errors.
   + dpkg database backup : `sudo cp /var/lib/dpkg/status /var/lib/dpkg/status.bak`
-  + dpkg database manual cleanup : `sudo nano /var/lib/dpkg/status`
+  + dpkg database manual cleanup : `sudo nano /var/lib/dpkg/status` and remove "Packge: coffee-manager-2nd" part.
   + Delete all usr/share/elpusk directory.
   + Delete all var/log/elpusk directory.
