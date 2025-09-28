@@ -30,3 +30,13 @@ coffee framework second edition
   + dpkg database manual cleanup : `sudo nano /var/lib/dpkg/status` and remove "Packge: coffee-manager-2nd" part.
   + Delete all usr/share/elpusk directory.
   + Delete all var/log/elpusk directory.
+
+- Informations
+  + See [Wiki](https://github.com/elpusk/publish.framework.coffee.2nd/wiki)
+  + Problems See [issues tab](https://github.com/elpusk/publish.framework.coffee.2nd/issues)
+  + test code
+    - C++ 17.
+    - lpu237 device msr, i-button reading test.
+    - [test project main function](/code/test/tp_lpu237_dll/tp_main.cpp)
+    - [header file for msr reading](/code/inc/tg_lpu237_dll.h)
+    - [header file for i-button reading](/code/inc/tg_lpu237_ibutton.h)
