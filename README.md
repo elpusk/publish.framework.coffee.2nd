@@ -8,6 +8,10 @@ coffee framework second edition
 
 - [Debian Installer](/installer/debian12/coffee-manager-2nd_2.0_amd64.deb)
 
+- **Very Important Note**
+  + Before using the liblpu237_dll.so or liblpu237_ibutton.so file, the lpu237 interface must be set to "USB HID vendor" mode.
+  + After installaion, you can change lpu237 interface on [web mapper](https://elpusk.github.io/library.js.coffee/tools_lpu237_full.html) <- Use google-chrome brower.
+
 - Installed Components
   + elpusk-hid-d : Daemon program.(2.0)
   + liblpu237_dll.so : MSR SO library for using elpusk-hid-d.
@@ -15,6 +19,7 @@ coffee framework second edition
   + libdev_lib.so : device io library. this is used by elpusk-hid-d internally.
  
 - Installation Method
+  + If you don't use the google-chrome brower, it must be installed before installating coffee-manager-2nd_2.0_amd64.deb.
   + sudo dpkg -i coffee-manager-2nd_2.0_amd64.deb
 
 - Removal Method
