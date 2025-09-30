@@ -9,8 +9,9 @@ coffee framework second edition
 - [Debian Installer](/installer/debian12/coffee-manager-2nd_2.0_amd64.deb)
 
 - **Very Important Note**
-  + Before using the liblpu237_dll.so or liblpu237_ibutton.so file, the lpu237 interface must be set to "USB HID vendor" mode.
+  + Before using the liblpu237_dll.so or liblpu237_ibutton.so file, the lpu237 interface must be set to **"USB HID vendor"** mode.
   + After installaion, you can change lpu237 interface on [web mapper](https://elpusk.github.io/library.js.coffee/tools_lpu237_full.html) <- Use google-chrome brower.
+  + for changing interface, use [the setting](https://github.com/elpusk/library.js.coffee/blob/master/lpu237_data/lp237_set_hid_only.xml) file.
 
 - Installed Components
   + elpusk-hid-d : Daemon program.(2.0)
@@ -20,6 +21,7 @@ coffee framework second edition
  
 - Installation Method
   + If you don't use the google-chrome brower, it must be installed before installating coffee-manager-2nd_2.0_amd64.deb.
+  + Before installation, install libnss3-tools.(`sudo apt install libnss3-tools`)
   + sudo dpkg -i coffee-manager-2nd_2.0_amd64.deb
 
 - Removal Method
@@ -45,3 +47,8 @@ coffee framework second edition
     - [test project main function](/code/test/tp_lpu237_dll/tp_main.cpp)
     - [header file for msr reading](/code/inc/tg_lpu237_dll.h)
     - [header file for i-button reading](/code/inc/tg_lpu237_ibutton.h)
+  + The used libraries
+    - boost c++ 1.80
+    - libusb 1.0
+    - openssl 1.1.1s
+    - nlohmann/json
