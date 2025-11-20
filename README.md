@@ -18,9 +18,9 @@ coffee framework second edition
   + elpusk-hid-d : v2.3 : Daemon program.
   + liblpu237_dll.so : v6.0 :MSR SO library for using elpusk-hid-d.
   + liblpu237_ibutton.so : v6.0 :i-button SO library for using elpusk-hid-d.
-  + libdev_lib.so : v1.0 : device io library. this is used by elpusk-hid-d internally.
+  + libdev_lib.so : v1.0 : device io library. this is used by elpusk-hid-d and lpu230_update internally.
   + lpu230_update : v2.2 : lpu230 firmware update utility.
-  + dev_lib.so : v1.0 : HID device io library(used by elpusk-hid-d and lpu230_update ).
+  + libtg_rom.so : v1.2 : rom file control library.
  
 - Installation Method
   + If you don't use the google-chrome brower, it must be installed before installating coffee-manager-2nd_2.3_amd64.deb.
