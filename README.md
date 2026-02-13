@@ -1,14 +1,14 @@
 # publish.framework.coffee.2nd
 coffee framework second edition
 
-- Currently, coffee-manager-2nd v2.7 is a version supports
+- Currently, coffee-manager-2nd v2.8 is a version supports
   + the Magnetic strip reading(MSR) function of lpu237. ( exclusive open - single process only can use this functionality at the same time )
   + i-button reading function of lpu237.( shared open - multi process can use this functionality at the same time )
   + This functional limitation is related to OPOS functionality.
   + lpu237 firmware update utility.(lpu230_update)
   + After installing this program, you can use [Web Mapper](https://elpusk.github.io/library.js.coffee.2nd/).
 
-- [Debian Installer](/installer/debian12/coffee-manager-2nd_2.7_amd64.deb)
+- [Debian Installer](/installer/debian12/coffee-manager-2nd_2.8_amd64.deb)
 - [Windows 11 Installer for x64](/installer/win11/coffee_manager_2nd_x64.msi)
 - [Windows 11 Installer for x86](/installer/win11/coffee_manager_2nd_x86.msi)
 
@@ -17,21 +17,21 @@ coffee framework second edition
   + After installaion, you can change lpu237 interface on [web mapper](https://elpusk.github.io/library.js.coffee/tools_lpu237_full.html) <- Use google-chrome brower.
   + for changing interface, use [the setting](https://github.com/elpusk/library.js.coffee/blob/master/lpu237_data/lp237_set_hid_only.xml) file.
 
-- Installed Components( installer v2.7 )
+- Installed Components( installer v2.8 )
   + coffee-service.exe : v2.0 : service program for Windows
-  + elpusk-hid-d(elpusk-hid-d.exe) : v2.6 : Daemon program.
+  + elpusk-hid-d(elpusk-hid-d.exe) : v2.7 : Daemon program.
   + liblpu237_dll.so(lpu237_dll.dll) : v6.0 :MSR SO library for using elpusk-hid-d.
   + liblpu237_ibutton.so(lpu237_ibutton.dll) : v6.0 :i-button SO library for using elpusk-hid-d.
   + libdev_lib.so(dev_lib.dll) : v1.0 : device io library. this is used by elpusk-hid-d and lpu230_update internally.
-  + lpu230_update(lpu230_update.exe) : v2.4 : lpu230 firmware update utility.
+  + lpu230_update(lpu230_update.exe) : v2.5 : lpu230 firmware update utility.
   + libtg_rom.so(tg_rom.dll) : v1.2 : rom file control library.
  
 - Installation Method  
   __*Warning: All web browsers must be closed before installation.*__
   - Debian12
-    + If you don't use the google-chrome brower, it must be installed before installating coffee-manager-2nd_2.7_amd64.deb.
+    + If you don't use the google-chrome brower, it must be installed before installating coffee-manager-2nd_2.8_amd64.deb.
     + Before installation, install libnss3-tools.(`sudo apt install libnss3-tools`)
-    + sudo dpkg -i coffee-manager-2nd_2.7_amd64.deb
+    + sudo dpkg -i coffee-manager-2nd_2.8_amd64.deb
   - Windows11
     + run coffee_manager_2nd_x64.msi( for 64 bits OS ) or coffee_manager_2nd_x86.msi( for 32 bits OS )
 
@@ -41,7 +41,7 @@ coffee framework second edition
 
 - Update Method
   + remove old version : `sudo dpkg -P coffee-manager-2nd`
-  + install new version : `sudo dpkg -i coffee-manager-2nd_2.7_amd64.deb`
+  + install new version : `sudo dpkg -i coffee-manager-2nd_2.8_amd64.deb`
 
 - Manual Removal : In case of installation or removal errors.
   + dpkg database backup : `sudo cp /var/lib/dpkg/status /var/lib/dpkg/status.bak`
