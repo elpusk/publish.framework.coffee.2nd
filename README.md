@@ -6,7 +6,7 @@ coffee framework second edition
   + i-button reading function of lpu237.( shared open - multi process can use this functionality at the same time )
   + This functional limitation is related to OPOS functionality.
   + lpu237 firmware update utility.(lpu230_update)
-  + After installing this program, you can use [Web Mapper](https://elpusk.github.io/library.js.coffee.2nd/).
+  + After installing this program, you can use [Web Mapper](https://elpusk.github.io/library.js.coffee.2nd/) or [Web Mapper 2nd](https://elpusk.github.io/library.js.coffee.2nd/).
 
 - [Debian Installer](/installer/debian12/coffee-manager-2nd_2.8_amd64.deb)
 - [Windows 11 Installer for x64](/installer/win11/coffee_manager_2nd_x64.msi)
