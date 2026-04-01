@@ -6,8 +6,8 @@ coffee framework second edition
   + i-button reading function of lpu237.( shared open - multi process can use this functionality at the same time )
   + This functional limitation is related to OPOS functionality.
   + lpu237 firmware update utility.(lpu230_update)
-  + After installing this program, you can use [Web Mapper](https://elpusk.github.io/library.js.coffee.2nd/) or [Web Mapper 2nd](https://elpusk.github.io/library.js.coffee.2nd/).
-  + Recover device from hidbootloader with [Web Mapper 2nd](https://elpusk.github.io/library.js.coffee.2nd/)
+  + After installing this program, you can use [Web Mapper 2nd](https://elpusk.github.io/library.js.coffee.2nd/app/webmapper/).
+  + Recover device from hidbootloader with [Web Mapper 2nd](https://elpusk.github.io/library.js.coffee.2nd/app/webmapper/)
 
 - [Debian Installer](/installer/debian12/coffee-manager-2nd_2.10_amd64.deb)
 - [Windows 11 Installer for x64](/installer/win11/coffee_manager_2nd_x64.msi)
@@ -15,7 +15,7 @@ coffee framework second edition
 
 - **Very Important Note**
   + Before using the liblpu237_dll.so(.dll) or liblpu237_ibutton.so(.dll) file, the lpu237 interface must be set to **"USB HID vendor"** mode.
-  + After installaion, you can change lpu237 interface on [web mapper](https://elpusk.github.io/library.js.coffee.2nd/app/webmapper/) <- Use google-chrome brower.
+  + After installaion, you can change lpu237 interface on [web mapper 2nd](https://elpusk.github.io/library.js.coffee.2nd/app/webmapper/) <- Use google-chrome brower.
   + for changing interface, use [the setting](https://github.com/elpusk/library.js.coffee/blob/master/lpu237_data/lp237_set_hid_only.xml) file.
 
 - Installed Components( installer v2.10 )
