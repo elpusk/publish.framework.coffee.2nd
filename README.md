@@ -1,7 +1,7 @@
 # publish.framework.coffee.2nd
 coffee framework second edition
 
-- Currently, coffee-manager-2nd v2.15 is a version supports
+- Currently, coffee-manager-2nd v2.16 is a version supports
   + the Magnetic strip reading(MSR) function of lpu237. ( exclusive open - single process only can use this functionality at the same time )
   + i-button reading function of lpu237.( shared open - multi process can use this functionality at the same time )
   + This functional limitation is related to OPOS functionality.
@@ -12,7 +12,7 @@ coffee framework second edition
   + Supports MSR & i-Button OPOS Service Objects.
   + Supports MSR JavaPos Service Objects.
 
-- [Debian Installer](/installer/debian12/coffee-manager-2nd_2.15_amd64.deb)
+- [Debian Installer](/installer/debian12/coffee-manager-2nd_2.16_amd64.deb)
 - [Windows 11 Installer for x64](/installer/win11/coffee_manager_2nd_x64.msi)
 - [Windows 11 Installer for x86](/installer/win11/coffee_manager_2nd_x86.msi)
 
@@ -22,15 +22,15 @@ coffee framework second edition
   + After installaion, you can change lpu237 interface on [web mapper 2nd](https://elpusk.github.io/library.js.coffee.2nd/app/webmapper/) <- Use google-chrome brower.
   + for changing interface, use [the setting](https://github.com/elpusk/library.js.coffee/blob/master/lpu237_data/lp237_set_hid_only.xml) file.
 
-- Installed Components( installer v2.15 )
-  + coffee-service.exe : v2.4 : service program for Windows
-  + elpusk-hid-d(elpusk-hid-d.exe) : v2.14 : Daemon program.
-  + libtg_lpu237_dll.so(tg_lpu237_dll.dll) : v6.5 : MSR SO library for using elpusk-hid-d.
-  + libtg_lpu237_ibutton.so(tg_lpu237_ibutton.dll) : v6.5 : i-button SO library for using elpusk-hid-d. the first release.
-  + libtg_lpu237_fw.so(tg_lpu237_fw.dll) : v6.5 : firmware update SO library for using elpusk-hid-d.
-  + tg_lpu237_tools.dll : v6.5 : for simple setting. for old library compatibility( windows x86 only)  
-  + libdev_lib.so(dev_lib.dll) : v1.5 : device io library. this is used by elpusk-hid-d and lpu230_update internally.
-  + lpu230_update(lpu230_update.exe) : v2.11 : lpu230 firmware update utility.
+- Installed Components( installer v2.16 )
+  + coffee-service.exe : v2.5 : service program for Windows
+  + elpusk-hid-d(elpusk-hid-d.exe) : v2.15 : Daemon program.
+  + libtg_lpu237_dll.so(tg_lpu237_dll.dll) : v6.6 : MSR SO library for using elpusk-hid-d.
+  + libtg_lpu237_ibutton.so(tg_lpu237_ibutton.dll) : v6.6 : i-button SO library for using elpusk-hid-d. the first release.
+  + libtg_lpu237_fw.so(tg_lpu237_fw.dll) : v6.6 : firmware update SO library for using elpusk-hid-d.
+  + tg_lpu237_tools.dll : v6.6 : for simple setting. for old library compatibility( windows x86 only)  
+  + libdev_lib.so(dev_lib.dll) : v1.6 : device io library. this is used by elpusk-hid-d and lpu230_update internally.
+  + lpu230_update(lpu230_update.exe) : v2.12 : lpu230 firmware update utility.
   + libtg_rom.so(tg_rom.dll) : v1.6 : rom file control library.
   + lpu23x-ibutton-mcp(lpu23x-ibutton-mcp.exe) : v1.1 : lpu237 magnetic card reading MCP server.
   + lpu23x-msr-mcp(lpu23x-msr-mcp.exe) : v1.1 : lpu237 i-button reading MCP server.
@@ -41,9 +41,9 @@ coffee framework second edition
 - Installation Method  
   __*Warning: All web browsers must be closed before installation.*__
   - Debian12
-    + If you don't use the google-chrome brower, it must be installed before installating coffee-manager-2nd_2.15_amd64.deb.
+    + If you don't use the google-chrome brower, it must be installed before installating coffee-manager-2nd_2.16_amd64.deb.
     + Before installation, install libnss3-tools.(`sudo apt install libnss3-tools`)
-    + sudo dpkg -i coffee-manager-2nd_2.15_amd64.deb
+    + sudo dpkg -i coffee-manager-2nd_2.16_amd64.deb
   - Windows11
     + run coffee_manager_2nd_x64.msi( for 64 bits OS ) or coffee_manager_2nd_x86.msi( for 32 bits OS )
   - MCP Server( Only x64, Only manual installation ) 
@@ -89,7 +89,7 @@ FOR DEBIAN12
 
 - Update Method
   + remove old version : `sudo dpkg -P coffee-manager-2nd`
-  + install new version : `sudo dpkg -i coffee-manager-2nd_2.15_amd64.deb`
+  + install new version : `sudo dpkg -i coffee-manager-2nd_2.16_amd64.deb`
 
 - Manual Removal : In case of installation or removal errors.
   + dpkg database backup : `sudo cp /var/lib/dpkg/status /var/lib/dpkg/status.bak`
