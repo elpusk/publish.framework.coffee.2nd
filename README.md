@@ -1,7 +1,8 @@
 # publish.framework.coffee.2nd
+
 coffee framework second edition
 
-- Currently, coffee-manager-2nd v2.16 is a version supports
+- Currently, coffee-manager-2nd v2.17 is a version supports
   + the Magnetic strip reading(MSR) function of lpu237. ( exclusive open - single process only can use this functionality at the same time )
   + i-button reading function of lpu237.( shared open - multi process can use this functionality at the same time )
   + This functional limitation is related to OPOS functionality.
@@ -11,8 +12,14 @@ coffee framework second edition
   + For lpu237 magnetic card reading & i-button reading, MCP Server of Claude & Cursor(local only, Claude - Only Windows)
   + Supports MSR & i-Button OPOS Service Objects.
   + Supports MSR JavaPos Service Objects.
+  + Supports OPOS Physical & Logical device rename.(lpu230_opos.exe)
+  + In Windows installer, support the slient installation.
+    + msiexec /i coffee_manager_2nd_x86.msi /qn /norestart
+    + msiexec /x coffee_manager_2nd_x86.msi /qn /norestart
+    + msiexec /i coffee_manager_2nd_x64.msi /qn /norestart
+    + msiexec /x coffee_manager_2nd_x64.msi /qn /norestart
 
-- [Debian Installer](/installer/debian12/coffee-manager-2nd_2.16_amd64.deb)
+- [Debian Installer](/installer/debian12/coffee-manager-2nd_2.17_amd64.deb)
 - [Windows 11 Installer for x64](/installer/win11/coffee_manager_2nd_x64.msi)
 - [Windows 11 Installer for x86](/installer/win11/coffee_manager_2nd_x86.msi)
 
@@ -22,7 +29,7 @@ coffee framework second edition
   + After installaion, you can change lpu237 interface on [web mapper 2nd](https://elpusk.github.io/library.js.coffee.2nd/app/webmapper/) <- Use google-chrome brower.
   + for changing interface, use [the setting](https://github.com/elpusk/library.js.coffee/blob/master/lpu237_data/lp237_set_hid_only.xml) file.
 
-- Installed Components( installer v2.16 )
+- Installed Components( installer v2.17 )
   + coffee-service.exe : v2.5 : service program for Windows
   + elpusk-hid-d(elpusk-hid-d.exe) : v2.15 : Daemon program.
   + libtg_lpu237_dll.so(tg_lpu237_dll.dll) : v6.6 : MSR SO library for using elpusk-hid-d.
@@ -37,13 +44,14 @@ coffee framework second edition
   + OposLpu230.dll : v1.8.31 : MSR reader OPOS service object of lpu237. the first release( windows x86 only)  
   + OposLpu230Lock.dll : v1.14.31 : i-button reader OPOS service object of lpu237. the first release( windows x86 only)  
   + libtg_lpu237_jni.so(tg_lpu237_jni.dll) : v2.0 : the JNI file of [JavaPos lpu237 msr Service Object](https://github.com/elpusk/so.jpos.lpu237)
+  + lpu230_opos.exe : v1.1 : changing Service Object Physical & Logical name.( windows x86 only )
  
 - Installation Method  
   __*Warning: All web browsers must be closed before installation.*__
   - Debian12
-    + If you don't use the google-chrome brower, it must be installed before installating coffee-manager-2nd_2.16_amd64.deb.
+    + If you don't use the google-chrome brower, it must be installed before installating coffee-manager-2nd_2.17_amd64.deb.
     + Before installation, install libnss3-tools.(`sudo apt install libnss3-tools`)
-    + sudo dpkg -i coffee-manager-2nd_2.16_amd64.deb
+    + sudo dpkg -i coffee-manager-2nd_2.17_amd64.deb
   - Windows11
     + run coffee_manager_2nd_x64.msi( for 64 bits OS ) or coffee_manager_2nd_x86.msi( for 32 bits OS )
   - MCP Server( Only x64, Only manual installation ) 
@@ -89,7 +97,7 @@ FOR DEBIAN12
 
 - Update Method
   + remove old version : `sudo dpkg -P coffee-manager-2nd`
-  + install new version : `sudo dpkg -i coffee-manager-2nd_2.16_amd64.deb`
+  + install new version : `sudo dpkg -i coffee-manager-2nd_2.17_amd64.deb`
 
 - Manual Removal : In case of installation or removal errors.
   + dpkg database backup : `sudo cp /var/lib/dpkg/status /var/lib/dpkg/status.bak`
